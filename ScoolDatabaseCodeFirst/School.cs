@@ -29,7 +29,7 @@
             public virtual ICollection<Student> Student { get; set; }
             
         }
-    public class SchoolDBInitializer : DropCreateDatabaseAlways<SchoolDatabaseCodeFirst.Connection>
+    public class SchoolDBInitializer : CreateDatabaseIfNotExists<SchoolDatabaseCodeFirst.Connection>
     {
 
         protected override void Seed(Connection context) => context.School.AddOrUpdate(x => x.SchoolName,

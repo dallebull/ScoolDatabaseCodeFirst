@@ -121,6 +121,7 @@
             this.listBox1.Size = new System.Drawing.Size(371, 173);
             this.listBox1.TabIndex = 16;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox1.Format += new System.Windows.Forms.ListControlConvertEventHandler(this.listBox1_Format_1);
             // 
             // Form1
             // 
